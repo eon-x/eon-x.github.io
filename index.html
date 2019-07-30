@@ -12,7 +12,6 @@
 		<title>驾呗共享汽车,让出行更自由</title>
 		<link rel='shortcut icon' href='img/36x36.png' type='image/x-icon' />
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<style type="text/css">
         .info {border:1px solid silver;}
@@ -87,8 +86,13 @@
         .adv-cont dt:hover{transform: scale(1.2)}
         
     </style>
-    <script type="text/javascript"
-            src="https://webapi.amap.com/maps?v=1.4.3&key=ccd4b7cbe08f29c323aebe142dbacc0a"></script>
+
+    <!-- 引入高德CSS文件 https://www.cnblogs.com/meng-ma-blogs/p/9278138.html-->
+	<link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.3&key=ccd4b7cbe08f29c323aebe142dbacc0a">
+    </script>
+    
+    <!-- 百度统计js -->
 	<script>
 	var _hmt = _hmt || [];
 	(function() {
@@ -108,9 +112,6 @@
 	           flag = true; break; 
 	        }
 	    }  
-		if(flag){
-			// window.location.href="./mobile_jiabei/index.html";
-		}
 	</script>
 	</head>
 	<body>
@@ -231,34 +232,6 @@
 	    	</div>
 	    </div>
 	    
-	    
-	 <!--    <div id="cartype">
-	    	<h1>车型介绍</h1>
-	    	<h2>驾呗共享汽车拥有北汽、奇瑞、知豆、比亚迪等多款车型，最大限度满足多层次出行需求。</h2>
-	    	 <div class="Box_con clear">
-	          <span class="btnl btn" id="btnl"></span>
-	          <span class="btnr btn" id="btnr"></span>
-	          <div class="conbox" id="BoxUl">
-	            <ul>
-	              <li class="cur"><img alt="广州共享汽车" src="img/car1.png" alt=""/></li>
-	              <li class="cur"><img alt="长沙共享租车" src="img/car2.png" alt=""/></li>
-	              <li class="cur"><img alt="深圳租车" src="img/car3.png" alt=""/></li>
-	              <li class="cur"><img alt="广州共享汽车APP" src="img/car4.png" alt=""/></li>
-	              <li class="cur"><img alt="北汽共享汽车" src="img/car5.png" alt=""/></li>
-	              <li class="cur"><img alt="比亚迪新能源汽车" src="img/car6.png" alt=""/></li>
-	              <li class="cur"><img alt="荣威新能源汽车" src="img/car7.png" alt=""/></li>
-	              <li class="cur"><img alt="驾呗共享汽车APP" src="img/car8.png" alt=""/></li>
-	              <li class="cur"><img alt="共享租车APP" src="img/car9.png" alt=""/></li>
-	              <li class="cur"><img alt="共享汽车押金" src="img/car10.png" alt=""/></li>
-	              <li class="cur"><img alt="苏州租车" src="img/car11.png" alt=""/></li>
-	              <li class="cur"><img alt="长沙租车" src="img/car12.png" alt=""/></li>
-	              <li class="cur"><img alt="深圳共享租车" src="img/car13.png" alt=""/></li>
-	              <li class="cur"><img alt="共享汽车网点" src="img/car14.png" alt=""/></li>
-	              <li class="cur"><img alt="收费方式" src="img/car15.png" alt=""/></li>
-	            </ul>
-	          </div>
-	        </div>
-	    </div> -->
 	    
 	    <div id="about">
 	    	<h1>关于驾呗</h1>
@@ -423,7 +396,6 @@
 	    	<p>扫码下载app即可使用</p>
 	    </div>
 	    
-	    
 	    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	    <script src="laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/Lunbo.js" type="text/javascript" charset="utf-8"></script>
@@ -515,6 +487,7 @@
         map.clearInfoWindow();
     }
 </script>
+<!-- 引入高德地图工具包js文件 -->
 <script type="text/javascript" src="https://webapi.amap.com/demos/js/liteToolbar.js"></script>
 	</body>
 </html>
