@@ -1,0 +1,146 @@
+﻿body, h1, h2, h3, h4, h5, h6, hr, p,   
+blockquote, /* structural elements 结构元素 */    
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */   
+pre, /* text formatting elements 文本格式元素 */   
+form, fieldset, legend, 
+img/* img elements 图片元素 */{ border:medium none; margin: 0; padding: 0; }  
+/** 设置默认字体 **/   
+body,button, input, select, textarea{font: 12px/1.5 '宋体',tahoma, Srial, helvetica, sans-serif; }  
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }  
+em{font-style:normal;}/** 重置列表元素 **/  
+ul, ol { list-style: none; }/** 重置超链接元素 **/   
+a { text-decoration: none; color:#333;}   
+a:hover { text-decoration: underline; color:#F40; }  
+/** 重置图片元素 **/   
+img{ border:0px;}   
+/** 重置表格元素 **/   
+table { border-collapse: collapse; border-spacing: 0; }   
+
+.clear{ clear:both;}
+body{ background:url(../imgcssjs/body_bg.jpg) repeat-y; background-position:center;}
+
+.fl{ float:left;}
+.fr{ float:right;}
+.h5{ height:5px;clear:both}
+.h10{ height:10px; clear:both}
+.h20{ height:20px; clear:both}
+.bgcolor{ background-color:#ffffff}
+
+
+.main_box{ margin:0 auto; width:944px;}
+.main_box940{ margin:0 auto; width:944px;}
+
+.clear{ clear:both;}
+.dede_pages{
+}
+.dede_pages ul{
+	float:left;
+	padding:12px 0px 12px 16px;
+}
+.dede_pages ul li{
+	float:left;
+	font-family:Tahoma;
+	line-height:17px;
+	margin-right:6px;
+	border:1px solid #E9E9E9;
+        list-style-type:none;
+}
+.dede_pages ul li a{
+	float:left;
+	padding:2px 4px 2px;
+	color:#555;
+	display:block;
+}
+.dede_pages ul li a:hover{
+	color:#690;
+	text-decoration:none;
+	padding:2px 4px 2px;
+}
+.dede_pages ul li.thisclass,
+.dede_pages ul li.thisclass a,.pagebox ul li.thisclass a:hover{
+	background-color:#F8F8F8;
+	padding:1px 2px 1px;
+	font-weight:bold;
+}
+.dede_pages .pageinfo{
+	line-height:21px;
+	padding:12px 10px 12px 16px;
+	color:#999;
+}
+.dede_pages .pageinfo strong{
+	color:#555;
+	font-weight:normal;
+	margin:0px 2px;
+}
+
+
+.logo{ padding-top:12px;}
+.top{ height:70px; line-height:70px;}
+.toplink a{ font-size:14px; color:#10ab4d; font-weight:bold}
+
+.daohang{ width:100%; height:35px; background:#005120; padding-top:13px;}
+.nav{ border-left:1px #005120 solid; float:left; height:20px; line-height:20px;padding: 0px 14px 0px 14px;}
+.nav a{ font-size:18px; font-weight:bold; color:#FFFFFF; font-family:"新宋体";}
+
+.shipin{ height:225px; width:330px; overflow:hidden}
+.gywm{ height:225px; width:605px; overflow:hidden}
+
+.biaodan .title{ text-align:center; font-size:30px; color:#ff0000; font-weight:bold}
+
+
+
+.new_list{ width:305px; float:left; margin-right: 5px;
+margin-left: 5px;}
+.new_list .taitou{ border-bottom:2px #cccccc solid; padding-bottom:5px;}
+.new_list .title{ font-size:16px; color:#c17c03; float:left; font-weight:bold}
+.new_list .more{ float:right}
+.new_list .more a{ font-size:12px;}
+
+
+
+.biaoge{ width:500px; margin: 0 auto; font-size:14px; margin-top:20px;}
+
+
+#index_list_article{}
+#index_list_article a{color:black;}
+.index_list_article_div{ width:100%; height:28px; line-height:28px}
+.index_list_article_l{ float:left}
+.index_list_article_r{float:right;}
+
+
+
+  #list_article{ font-size:14px;color:#ff598d}
+   #list_article a{color:black;}
+.list_article_div{ width:100%; height:25px;}
+.list_article_l{ float:left}
+.list_article_r{float:right;}
+.clear{ clear:both;}
+.jiange{ height:2px; margin-bottom:10px; border-bottom:1px #CCCCCC dashed;}
+
+
+
+
+.dibu{ width:100%; background:#005120; padding:40px 0; text-align:center; color:#FFFFFF; font-size:12px; line-height:25px;}
+
+.zhengwen{ font-size:12px; color:#816f3b; line-height:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

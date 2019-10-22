@@ -1,0 +1,9 @@
+1、系统基本设置了
+2、水印关闭了
+3、碎片管理创建了（头部logo，底部版权信息）
+3、轮播图创建了
+4、dede:channel 调用同级子栏目  noself='true'
+5、channelartlist 按ID号排序；当前样式currentstyle='current'  {dede:field.currentstyle/}
+6、分页双语 pagelang='en'
+7、搜索页支持article、sql、channelartlist 等标签;支持双语搜索，用的是search_en.php
+8、list和article标签按权重排序  list的orderby='weight' orderway='asc'；article的用orderby='weight'
