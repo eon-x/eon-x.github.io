@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link type="text/css" rel="stylesheet" href="/templets/fengzi/imgcssjs/css.css" />
+</head>
+<body>
+<!--head.htm-->
+{dede:include filename="head.htm" /}
+<!--head.htm end-->
+<div style="width:100%; background:url({dede:sql sql='Select * from dede_addon18 where aid=3'}[field:img1/]{/dede:sql}) no-repeat; background-position:center; height:458px;"></div>
+<div class="h10"></div>
+<div class="main_box940 bgcolor" style="padding:10px">
+  <div class="fl shipin">{dede:sql sql='Select * from dede_addon_suipian where aid=53'}[field:content/]{/dede:sql}</div>
+  <div class="fr gywm">{dede:sql sql='Select * from dede_addon_suipian where aid=54'}[field:content/]{/dede:sql}</div>
+  <div class="h10"></div>
+  <div class="cpjs">
+    {dede:sql sql='Select * from dede_addon_suipian where aid=55'}[field:content/]{/dede:sql}
+  </div>
+</div>
+<div class="h20"></div>
+<div class="main_box bgcolor">
+{dede:sql sql='Select * from dede_addon_suipian where aid=56'}[field:content/]{/dede:sql}
+</div>
+<div class="h20"></div>
+<div class="main_box">
+{dede:sql sql='Select * from dede_addon_suipian where aid=57'}[field:content/]{/dede:sql}
+</div>
+<div class="h20"></div>
+<div class="main_box bgcolor">
+{dede:sql sql='Select * from dede_addon_suipian where aid=58'}[field:content/]{/dede:sql}
+</div>
+<div class="h20"></div>
+<div class="main_box biaodan">
+  <div class="title">在线订购！送货上门！货到付款！邮费全包！</div>
+  <div class="biaoge">
+  <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post">
+<input type="hidden" name="diyid" value="1">
+<input type="hidden" name="do" value="2">
+<table style="width:97%;" cellpadding="5" cellspacing="10">
+<tbody><tr>
+  <td align="right" valign="top">选择产品：</td>
+  <td><input type="radio" name="cp" class="np" value="风姿丰胸X盒 特惠价2888元" checked="">风姿丰胸X盒 特惠价2888元<br />
+<input type="radio" name="cp" class="np" value="风姿补肾X盒 特惠价2888元">风姿补肾X盒 特惠价2888元<br />
+<input type="radio" name="cp" class="np" value="丰姿美白X盒 特惠价2888元">丰姿美白X盒 特惠价2888元<br />
+<input type="radio" name="cp" class="np" value="丰姿减肥茶X盒 特惠价2888元">丰姿减肥茶X盒 特惠价2888元<br />
+<input type="radio" name="cp" class="np" value="泰国产品2盒 2000元">泰国产品2盒 2000元<br />
+</td>
+</tr>
+<tr>
+  <td align="right" valign="top">付款方式：</td>
+  <td><select name="fukuan" style="width:150px"><option value="货到付款">货到付款</option>
+<option value="在线支付">在线支付</option>
+</select>
+</td>
+</tr>
+<tr>
+  <td align="right" valign="top" style="background:#fafafa">您的姓名：</td>
+  <td><input type="text" name="xingming" id="xingming" style="width:150px" class="intxt" value="">
+</td>
+</tr>
+<tr>
+  <td align="right" valign="top" style="background:#fafafa">联系电话：</td>
+  <td><input type="text" name="dianhua" id="dianhua" style="width:150px" class="intxt" value="">
+</td>
+</tr>
+<tr>
+  <td align="right" valign="top" style="background:#fafafa">发货地址：</td>
+  <td><input type="text" name="dizhi" id="dizhi" style="width:250px" class="intxt" value="">
+</td>
+</tr>
+<tr>
+  <td align="right" valign="top" style="background:#fafafa">备注留言：</td>
+  <td><textarea name="liuyan" id="liuyan" rows="6" style="width:90%;height:80"></textarea>
+</td>
+</tr>
+<input type="hidden" name="dede_fields" value="cp,radio;fukuan,select;xingming,text;dianhua,text;dizhi,text;liuyan,multitext">
+<input type="hidden" name="dede_fieldshash" value="1c4535561b87a284e6c01b4acbcf0f79"></tbody></table>
+<div align="center" style="height:30px;padding-top:10px;">
+<input type="submit" name="submit" value="提交订单" class="coolbg">
+ 
+<input type="reset" name="reset" value="重 置" class="coolbg">
+</div>
+</form>
+  </div>
+</div>
+<div class="h20"></div>
+<div class="main_box">
+  
+  
+  {dede:channelArtlist typeid='12,13,14'}
+<div class="new_list" style="{dede:global name=itemindex runphp='yes'}$a="margin-right:0px;"; $b="";if (@me==3) @me=$a; else @me=$b;{/dede:global}">
+    <div class="taitou">
+	  <div class="title">{dede:field.typename/}</div>
+	  <div class="more"><a href="{dede:field.typedir/}" target="_blank">更多</a></div>
+	  <div class="clear"></div>
+	</div>
+	<div class="h10"></div>
+	<div class="list">
+  
+  
+  {dede:arclist typeid='' att=''  limit='0,10'  titlelen='120' infolen=''  orderby='pubdate' }
+<div class="index_list_article_div" >
+		 <div class="index_list_article_l"><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title function="cn_substr(@me,50)"/]</a></div>
+		 <div class="index_list_article_r">[field:stime/]</div>
+  </div>
+{/dede:arclist}
+  
+  
+</div>
+  </div>
+{/dede:channelArtlist}
+  
+  
+  
+  
+  
+</div>
+<div class="h20"></div>
+<!--footer.htm-->
+{dede:include filename="footer.htm" /}
+<!--footer.htm end-->
+</body>
+</html>
