@@ -17,7 +17,7 @@ img{ border:0px;}
 table { border-collapse: collapse; border-spacing: 0; }   
 
 .clear{ clear:both;}
-body{ background:url(../imgcssjs/body_bg.jpg) repeat-y; background-position:center;}
+body{ background:url(body_bg.jpg) repeat-y; background-position:center;}
 
 .fl{ float:left;}
 .fr{ float:right;}
