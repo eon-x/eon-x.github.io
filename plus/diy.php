@@ -66,6 +66,9 @@ if($action == 'post')
             {
                 showMsg('电话不能为空!', '-1');
                 exit();
+            }elseif (strlen($phone) != 11) {
+                showMsg('电话号码不是11位！', '-1');
+                exit();
             }
         }
 
@@ -145,29 +148,34 @@ if($action == 'post')
                 $goto = !empty($cfg_cmspath) ? $cfg_cmspath : '/';
                 $bkmsg = '发布成功，请等待管理员处理。。。';
 
-                $mail = new PHPMailer();
-                //是否启用smtp的debug进行调试 开发环境建议开启 生产环境注释掉即可 默认关闭debug调试模式
-                //$mail->SMTPDebug = 2;
-                $mail->isSMTP();
-                $mail->SMTPAuth=true;
-                $mail->Host = 'smtp.163.com';
-                // $mail->SMTPSecure = 'ssl';
-                $mail->Port = 25;
-                $mail->CharSet = 'UTF-8';
-                $mail->FromName = 'X';
-                $mail->Username ='13184388190@163.com';
-                $mail->Password = 'xzxz123123';
-                $mail->From = '13184388190@163.com'; 
-                $mail->addAddress('656624075@qq.com');
-                $mail->Subject = 'PHPMailer发送邮件的示例';
-                $mail->isHTML(true);
-                $mail->Body = "<p>产品：".$cp."</p><p>姓名：".$name."</p><p>电话：".$phone."</p><p>地址：".$address."</p><p>留言：".$qqMessage."</p>";
-                $status = $mail->send();
-                // if($status) {
-                //     echo '发送成功';
-                // }else{
-                //     echo '发送失败，错误信息：'.$mail->ErrorInfo;
-                // }
+                if (strlen($phone) == 11) {
+                    $mail = new PHPMailer();
+                    //是否启用smtp的debug进行调试 开发环境建议开启 生产环境注释掉即可 默认关闭debug调试模式
+                    //$mail->SMTPDebug = 2;
+                    $mail->isSMTP();
+                    $mail->SMTPAuth=true;
+                    $mail->Host = 'smtp.163.com';
+                    // $mail->SMTPSecure = 'ssl';
+                    $mail->Port = 25;
+                    $mail->CharSet = 'UTF-8';
+                    $mail->FromName = 'X';
+                    $mail->Username ='13184388190@163.com';
+                    $mail->Password = 'xzxz123123';
+                    $mail->From = '13184388190@163.com'; 
+                    $mail->addAddress('656624075@qq.com');
+                    $mail->Subject = '订单邮件';
+                    $mail->isHTML(true);
+                    $mail->Body = "<p>产品：".$cp."</p><p>姓名：".$name."</p><p>电话：".$phone."</p><p>地址：".$address."</p><p>留言：".$qqMessage."</p>";
+                    $status = $mail->send();
+                    // if($status) {
+                    //     echo '发送成功';
+                    // }else{
+                    //     echo '发送失败，错误信息：'.$mail->ErrorInfo;
+                    // }
+                }
+                // else{
+                //     echo "没有发送！".$phone;
+                // }              
             }
             showmsg($bkmsg, $goto);
         }
