@@ -1,5 +1,5 @@
 INSERT INTO `dede_addon_suipian` VALUES('1','1','','','113.89.70.22','<img src=\"/templets/fengzi/imgcssjs/logo.png\" />');
-INSERT INTO `dede_addon_suipian` VALUES('2','1','','','119.137.110.233','深圳市月之韵实业有限公司版权所有 Copyright By 2015<br />\r\n服务热线：400-7885-881 服务电话：0755-22968416&nbsp;服务地址：深圳市罗湖区嘉宾路城市天地广场A1403 ');
+INSERT INTO `dede_addon_suipian` VALUES('2','1','','','119.137.110.233','深圳市月之韵实业有限公司版权所有 Copyright By 2015<br />\r\n服务热线：400-7885-888 服务电话：0755-22968428&nbsp;服务地址：深圳市罗湖区嘉宾路城市天地广场A1403 ');
 INSERT INTO `dede_addon_suipian` VALUES('4','1','','','119.137.110.233','<br />\r\n<p>\r\n	&nbsp;</p>\r\n');
 INSERT INTO `dede_addon_suipian` VALUES('53','1','','','113.89.71.150','<p>\r\n	<iframe allowfullscreen=\"\" frameborder=\"0\" height=\"225\" src=\"http://www.56.com/iframe/MTA1MDcxMzg3\" width=\"320\"></iframe></p>\r\n<p>\r\n	&nbsp;</p>\r\n');
 INSERT INTO `dede_addon_suipian` VALUES('54','1','','','127.0.0.1','<img src=\"/templets/fengzi/imgcssjs/index_gywm.jpg\" />');
