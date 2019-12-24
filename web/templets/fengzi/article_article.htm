@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link type="text/css" rel="stylesheet" href="/templets/fengzi/imgcssjs/css2.css" />
+</head>
+<body>
+<!--head.htm-->
+{dede:include filename="head.htm" /}
+<!--head.htm end-->
+<div style="width:100%; background:url({dede:field.typeid runphp='yes'}$ID = @me; $sql = "SELECT * FROM `dede_arctype` WHERE id=$ID";$query = mysql_query($sql);$row=mysql_fetch_array($query); $relID = "$row[reid]";if($relID == 0) {@me = $row[arcpic];}else{$sql = "SELECT `arcpic` FROM `dede_arctype` WHERE id=$relID";$query = mysql_query($sql);$row=mysql_fetch_array($query); @me = $row[arcpic];}{/dede:field.typeid}
+) no-repeat; background-position:center; height:826px;"></div>
+<div class="h10"></div>
+<div class="main_box940 bgcolor" style="padding:10px">
+   <div style=" font-size:16px; font-weight:bold; text-align:center">{dede:field name="title"/}</div>
+  <div style=" font-size:12px; color:#000;text-align:center; margin:10px auto">发表时间：{dede:field name='pubdate' function='GetDateMk(@me)'/}  浏览次数：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></div>
+  <div class="zhengwen" style=" font-size:12px; color:#000;">{dede:field name='body'/}</div>
+</div>
+<div class="h20"></div>
+<!--footer.htm-->
+{dede:include filename="footer.htm" /}
+<!--footer.htm end-->
+</body>
+</html>

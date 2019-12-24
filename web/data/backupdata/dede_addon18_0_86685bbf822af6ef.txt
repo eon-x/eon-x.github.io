@@ -1,0 +1,1 @@
+INSERT INTO `dede_addon18` VALUES('3','2','','','127.0.0.1','/templets/fengzi/imgcssjs/index_banner.jpg','','','','','');
