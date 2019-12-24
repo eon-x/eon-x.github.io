@@ -1,7 +1,7 @@
 <?php
 $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source,file_put_contents';
 $cfg_disable_tags = 'php';
-$cfg_basehost = 'http://www.fengzicom.com/';
+$cfg_basehost = 'http://www.fengzichina.xyz/';
 $cfg_cmspath = '';
 $cfg_cookie_encode = 'yXSVEBFL7XQFW1tMyyc1tICm6Kfaf3y';
 $cfg_indexurl = '/';

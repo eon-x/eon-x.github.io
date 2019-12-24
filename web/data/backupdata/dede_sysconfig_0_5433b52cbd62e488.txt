@@ -1,4 +1,4 @@
-INSERT INTO `dede_sysconfig` VALUES('1','cfg_basehost','站点根网址','1','string','http://www.fengzicom.com/');
+INSERT INTO `dede_sysconfig` VALUES('1','cfg_basehost','站点根网址','1','string','http://www.fengzichina.xyz/');
 INSERT INTO `dede_sysconfig` VALUES('2','cfg_cmspath','DedeCMS安装目录','2','string','');
 INSERT INTO `dede_sysconfig` VALUES('3','cfg_cookie_encode','cookie加密码','2','string','yXSVEBFL7XQFW1tMyyc1tICm6Kfaf3y');
 INSERT INTO `dede_sysconfig` VALUES('4','cfg_indexurl','网页主页链接','1','string','/');
