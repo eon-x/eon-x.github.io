@@ -1,1 +1,0 @@
-INSERT INTO `dede_homepageset` VALUES('fengzi/index.htm','../index.html','1');
