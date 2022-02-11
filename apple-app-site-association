@@ -5,6 +5,10 @@
 		{
 			"appID": "73MBNCQA6F.com.xj.inxfit.eyewear",
 			"paths": ["*","/eyewear/*"]
+            	},
+		{
+			"appID": "JHN3C3AXK5.com.xj.inxfit.eyewear",
+			"paths": ["*","/eyewear/*"]
             	}
         ]
     }
