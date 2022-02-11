@@ -3,8 +3,8 @@
         "apps": [],
         "details": [
 		{
-                		"appID": "73MBNCQA6F.com.xj.inxfit.eyewear",
-                		"paths": [ "/eyewear/*"]
+			"appID": "73MBNCQA6F.com.xj.inxfit.eyewear",
+			"paths": ["*","/eyewear/*"]
             	}
         ]
     }
